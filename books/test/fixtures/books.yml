@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  scaffold: MyString
+  name: MyString
+  borrowed_date: 2013-09-07
+
+two:
+  scaffold: MyString
+  name: MyString
+  borrowed_date: 2013-09-07

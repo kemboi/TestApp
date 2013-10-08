@@ -1,0 +1,41 @@
+<h1>Listing bookborrowings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th>Title</th>
+      <th></th>
+      <th>Author</th>
+      <th></th>
+      <th>Date publish</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bookborrowings.each do |bookborrowing| %>
+      <tr>
+        <td><%= bookborrowing.name %></td>
+        <td><%= bookborrowing. %></td>
+        <td><%= bookborrowing.title %></td>
+        <td><%= bookborrowing. %></td>
+        <td><%= bookborrowing.author %></td>
+        <td><%= bookborrowing. %></td>
+        <td><%= bookborrowing.date_publish %></td>
+        <td><%= bookborrowing. %></td>
+        <td><%= link_to 'Show', bookborrowing %></td>
+        <td><%= link_to 'Edit', edit_bookborrowing_path(bookborrowing) %></td>
+        <td><%= link_to 'Destroy', bookborrowing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bookborrowing', new_bookborrowing_path %>

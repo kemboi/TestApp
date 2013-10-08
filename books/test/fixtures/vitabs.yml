@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  : MyString
+  title: MyString
+  : MyString
+  dateborrowed: MyString
+  : 2013-09-07
+
+two:
+  Name: MyString
+  : MyString
+  title: MyString
+  : MyString
+  dateborrowed: MyString
+  : 2013-09-07

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vitabus.Name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @vitabus.title %>
+</p>
+
+<p>
+  <strong>Dateborrowed:</strong>
+  <%= @vitabus.dateborrowed %>
+</p>
+
+<%= link_to 'Edit', edit_vitabus_path(@vitabus) %> |
+<%= link_to 'Back', vitabus_path %>

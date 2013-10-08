@@ -1,0 +1,2 @@
+module VitabusHelper
+end

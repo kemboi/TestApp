@@ -1,0 +1,37 @@
+<h1>Listing vitabs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th>Title</th>
+      <th></th>
+      <th>Dateborrowed</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vitabs.each do |vitab| %>
+      <tr>
+        <td><%= vitab.Name %></td>
+        <td><%= vitab. %></td>
+        <td><%= vitab.title %></td>
+        <td><%= vitab. %></td>
+        <td><%= vitab.dateborrowed %></td>
+        <td><%= vitab. %></td>
+        <td><%= link_to 'Show', vitab %></td>
+        <td><%= link_to 'Edit', edit_vitab_path(vitab) %></td>
+        <td><%= link_to 'Destroy', vitab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vitab', new_vitab_path %>

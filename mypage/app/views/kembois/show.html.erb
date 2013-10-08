@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @kemboi.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @kemboi.address %>
+</p>
+
+<%= link_to 'Edit', edit_kemboi_path(@kemboi) %> |
+<%= link_to 'Back', kembois_path %>

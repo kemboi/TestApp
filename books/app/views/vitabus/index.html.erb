@@ -1,0 +1,31 @@
+<h1>Listing vitabus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Dateborrowed</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vitabus.each do |vitabus| %>
+      <tr>
+        <td><%= vitabus.Name %></td>
+        <td><%= vitabus.title %></td>
+        <td><%= vitabus.dateborrowed %></td>
+        <td><%= link_to 'Show', vitabus %></td>
+        <td><%= link_to 'Edit', edit_vitabus_path(vitabus) %></td>
+        <td><%= link_to 'Destroy', vitabus, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vitabu', new_vitabus_path %>

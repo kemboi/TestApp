@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dateofmanuf: 2013-09-07
+
+two:
+  dateofmanuf: 2013-09-07
